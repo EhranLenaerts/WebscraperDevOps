@@ -24,7 +24,7 @@ jobs:
     - name: Test
       run: dotnet test --no-restore --verbosity normal
     - name: Publish
-      run: dotnet publish
+      run: dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true
       
     - name: Upload WebScraperEhran Build Artifact
       uses: actions/upload-artifact@v2
