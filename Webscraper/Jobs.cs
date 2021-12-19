@@ -12,7 +12,7 @@ namespace WebScraping2
         public static void Job()
         {
             //Setting driver parameters
-            var chromeDriver = ChromeDriverService.CreateDefaultService();
+            var chromeDriver = ChromeDriverService.CreateDefaultService(".\\");
             chromeDriver.SuppressInitialDiagnosticInformation = true;
             ChromeOptions options = new ChromeOptions();
             options.AddArgument("--log-level=3");

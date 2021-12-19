@@ -20,7 +20,7 @@ namespace WebScraping
             String UserInput = Console.ReadLine();
             //Setting up driver options
             ChromeOptions options = new ChromeOptions();
-            var chromeDriver = ChromeDriverService.CreateDefaultService();
+            var chromeDriver = ChromeDriverService.CreateDefaultService(".\\");
             chromeDriver.SuppressInitialDiagnosticInformation = true;
             options.AddArgument("--log-level=3");
             //Create the reference for the browser with options

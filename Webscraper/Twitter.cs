@@ -44,7 +44,7 @@ namespace WebScraping3
             Console.WriteLine("How many tweets would you like to scrape? (Numbers only)");
             var amount = int.Parse(Console.ReadLine());
             //Setting driver parameters
-            var chromeDriver = ChromeDriverService.CreateDefaultService();
+            var chromeDriver = ChromeDriverService.CreateDefaultService(".\\");
             chromeDriver.SuppressInitialDiagnosticInformation = true;
             ChromeOptions options = new ChromeOptions();
             options.AddArgument("--log-level=3");
