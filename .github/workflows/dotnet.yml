@@ -1,9 +1,9 @@
 name: .NET Core
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,4 +30,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: WebScraperEhran
-        path: /home/runner/work/WebscraperDevOps/WebscraperDevOps/bin/Release/netcoreapp3.1/win-x64/publish
+        path: /home/runner/work/WebscraperEhran/WebscraperEhran/bin/Release/netcoreapp3.1/win-x64/publish
